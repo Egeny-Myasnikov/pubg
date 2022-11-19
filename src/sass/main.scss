@@ -1,0 +1,186 @@
+.svg {
+    width: 50px;
+    height: 50px;
+    fill: #32f;
+    // overflow: visible;
+}
+
+@import "./includes/includes.scss";
+
+
+*,
+*::after,
+*::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: $base-font-size;
+    font-family: Montserrat;
+    line-height: 1.5;
+    background-color: $main-bg-color;
+
+    @include laptop {
+        color: #fff;
+        font-size: $laptop-font-size;
+    }
+
+    @include mobile {
+        color: #fff;
+        font-size: $mobile-font-size;
+    }
+
+
+}
+
+img {
+    max-width: 100%;
+}
+
+button {
+    border: none;
+    background: transparent;
+    cursor: pointer;
+}
+
+
+
+a {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #333;
+}
+
+h1 {
+    @include font-Montserrat-ExtraBold;
+    font-size: 45px;
+    line-height: 55px;
+
+    @media (max-width: 376px) {
+        font-size: 30px;
+    }
+}
+
+h2 {
+    @include font-Montserrat-ExtraBold;
+    font-size: 35px;
+    line-height: 45px;
+
+    &.title {
+        &--center {
+            text-align: center;
+        }
+    }
+}
+
+h3 {
+    @include font-Montserrat-SemiBold;
+    font-size: 21px;
+    line-height: 26px;
+}
+
+h4 {
+    @include font-Montserrat-SemiBold;
+    font-size: 18px;
+    line-height: 22px;
+}
+
+
+.link {
+    color: $link-color;
+    font-size: 16px;
+    transition: .4s;
+    text-decoration: underline;
+    text-transform: none;
+
+    &:hover {
+        color: $link-hover-color;
+        transition: .4s;
+    }
+}
+
+.nav-link {
+    @include font-Montserrat-Bold;
+    font-size: 1.07em;
+    line-height: 21px;
+    color: $wite-color;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 10px;
+    transition: .4s;
+
+    @media (max-width: 1025px) {
+        font-size: .8em;
+        padding: 5px;
+    }
+
+    @media (max-width: 840px) {
+        font-size: .7em;
+        padding: 5px;
+    }
+
+    &:hover {
+        color: $link-hover-color;
+    }
+}
+
+p {
+    @include font-Montserrat-Regular;
+    font-size: 1em;
+    line-height: 22px;
+}
+
+.list li {
+    padding-left: 10px;
+    margin-bottom: 15px;
+
+    &::marker {
+        content: "⬥";
+        color: $sub-color;
+        font-size: 1.2em;
+
+    }
+}
+
+.warning {
+    background-color: $wite-color;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+
+    &-svg {
+        fill: $sub-color;
+
+    }
+}
+
+.wrapper {
+    @include wrapper;
+}
+
+._container {
+    @include container-desktop;
+    min-width: 90%;
+
+    @media (max-width: 1300px) {
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+
+    @media (max-width: 1024px) {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    @media (max-width: 376px) {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+}
+
+
+
+@import "./blocks/*.scss";

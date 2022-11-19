@@ -1,0 +1,28 @@
+$burgerSize: 40px;
+
+.burger {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    width: $burgerSize;
+    height: $burgerSize;
+    gap: 20%;
+
+    &::before,
+    &::after {
+        content: '';
+        width: $burgerSize;
+        height: 3px;
+        background: $white;
+    }
+
+    &::before {}
+
+    &::after {}
+
+    @media (max-width: 376px) {
+        display: grid;
+
+    }
+}

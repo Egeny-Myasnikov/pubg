@@ -1,0 +1,8 @@
+[
+    {"title":"Главная", "path":"#home"},
+    {"title":"Тарифы", "path":"#tariffs"},
+    {"title":"Отзывы", "path":"#reviews"},
+    {"title":"FAQ", "path":"#faq"},
+    {"title":"Контакты", "path":"#contacts"},
+    {"title":"Функционал", "path":"#functional"}
+]

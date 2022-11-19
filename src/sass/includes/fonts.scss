@@ -1,0 +1,29 @@
+@import "./../mixins/font-face.scss";
+@include font-face("Montserrat", "Montserrat-ExtraBold", 800);
+@include font-face("Montserrat", "Montserrat-Bold", 700);
+@include font-face("Montserrat", "Montserrat-SemiBold", 600);
+@include font-face("Montserrat", "Montserrat-Regular", 400);
+
+@mixin font-Montserrat-ExtraBold {
+    font-family: Montserrat;
+    font-weight: 800;
+    font-style: normal;
+}
+
+@mixin font-Montserrat-Bold {
+    font-family: Montserrat;
+    font-weight: 700;
+    font-style: normal;
+}
+
+@mixin font-Montserrat-SemiBold {
+    font-family: Montserrat;
+    font-weight: 600;
+    font-style: normal;
+}
+
+@mixin font-Montserrat-Regular {
+    font-family: Montserrat;
+    font-weight: 400;
+    font-style: normal;
+}

@@ -1,0 +1,17 @@
+.footer {
+    margin-top: 100px;
+    background: url('./../../img/bg-footer.svg') bottom no-repeat;
+    background-size: contain;
+
+    &__contacts {
+        margin-bottom: 100px;
+    }
+
+    &__row {
+        margin-bottom: 50px;
+
+        @media (max-width: 376px) {
+            display: none;
+        }
+    }
+}

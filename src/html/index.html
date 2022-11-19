@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="ru">
+<!-- head -->
+@@include('chunk/head.html')
+
+<body>
+    <div class="wrapper">
+        <!-- first-block -->
+        @@include('chunk/first-block.html')
+
+        <!-- functional-block -->
+        @@include('chunk/functional-block.html')
+
+        <!-- say-about-us-block -->
+        @@include('chunk/say-about-us-block.html')
+
+        <!-- tariffs-block -->
+
+        <section id="tariffs" class="tariffs-block">
+            <div class="_container tariffs-block__container content--center">
+                <h2 class="text-block text-block__title--decor-left-right">Тарифы</h2>
+                <!-- btns -->
+                <div class="tariffs-block__mbtns os-mbtns">
+
+                    <button class="mbtn mbtn--icon-text os-mbtns__mbtn">
+                        <svg class="svg mbtn__svg os-mbtns__svg">
+                            <use xlink:href="./symbol/svg/sprite.symbol.svg#windows" />
+                            <svg />
+                            <span class="os-mbtns__text">Windows</span>
+                    </button>
+
+                    <button class="mbtn mbtn--icon-text os-mbtns__mbtn">
+                        <svg class="svg mbtn__svg os-mbtns__svg">
+                            <use xlink:href="./symbol/svg/sprite.symbol.svg#android" />
+                            <svg />
+                            <span class="os-mbtns__text">Android</span>
+                    </button>
+                    <button class="mbtn mbtn--icon-text os-mbtns__mbtn  os-mbtns__mbtn--active">
+                        <svg class="svg mbtn__svg os-mbtns__svg">
+                            <use xlink:href="./symbol/svg/sprite.symbol.svg#apple" />
+                            <svg />
+                            <span class="os-mbtns__text">iOS</span>
+                    </button>
+                </div>
+                <!-- card-block -->
+                <div class="tariffs-block__card-block card-block">
+                    <!-- card -->
+                    <div class="card-block__card card">
+                        <strong class="card__name">Обычная</strong>
+                        <div class="card__content">
+                            <h3 class="card__title">1 месяц</h3>
+                            <ul class="card__list">
+                                <li class="card__item card__item--check"> Весь функционал чита</li>
+                                <li class="card__item card__item--check">Обновления 1 раз в месяц</li>
+                                <li class="card__item card__item--check">Техническая поддержка</li>
+                                <li class="card__item card__item--check">Анти-Бан</li>
+                                <li class="card__item card__item--close">Улучшенная оптимизация</li>
+                                <li class="card__item card__item--close">Запуск на других телефонах</li>
+                                <li class="card__item card__item--close">DPI+, ASN, SKK</li>
+                            </ul>
+                            <strong class="card__price">649</strong>
+                        </div>
+
+                        <button class="mbtn mbtn--icon-text card__mbtn" data-modal="buyRegular">
+                            Приобрести
+                            <svg class="svg mbtn__svg">
+                                <use xlink:href="./symbol/svg/sprite.symbol.svg#arrow_right" />
+                                <svg />
+
+                        </button>
+
+                    </div>
+                    <div class="card-block__card card">
+                        <strong class="card__name">Стандартная</strong>
+                        <div class="card__content">
+                            <h3 class="card__title">3 месяца</h3>
+                            <ul class="card__list">
+                                <li class="card__item card__item--check"> Весь функционал чита</li>
+                                <li class="card__item card__item--check">Постоянные обновления</li>
+                                <li class="card__item card__item--check">Поддержка 24/7</li>
+                                <li class="card__item card__item--check">Улучшенный Анти-Бан</li>
+                                <li class="card__item card__item--check">Улучшенная оптимизация</li>
+                                <li class="card__item card__item--check">Запуск на других телефонах</li>
+                                <li class="card__item card__item--close">DPI+, ASN, SKK</li>
+                            </ul>
+                            <strong class="card__price">1 499</strong>
+                        </div>
+                        <button class="mbtn mbtn--icon-text card__mbtn" data-modal="buyStandard">
+                            Приобрести
+                            <svg class="svg mbtn__svg">
+                                <use xlink:href="./symbol/svg/sprite.symbol.svg#arrow_right" />
+                                <svg />
+                        </button>
+                    </div>
+                    <div class="card-block__card card">
+                        <strong class="card__name">PRO Версия</strong>
+                        <div class="card__content">
+                            <h3 class="card__title">Навсегда</h3>
+                            <ul class="card__list">
+                                <li class="card__item card__item--check">Весь функционал чита + NEW</li>
+                                <li class="card__item card__item--check">Все обновления + BETA тест</li>
+                                <li class="card__item card__item--check">Поддержка 24/7</li>
+                                <li class="card__item card__item--check">Самый мощный Анти-Бан</li>
+                                <li class="card__item card__item--check">Максимальная оптимизация</li>
+                                <li class="card__item card__item--check">Запуск на других телефонах</li>
+                                <li class="card__item card__item--check">DPI+, ASN, SKK</li>
+                            </ul>
+                            <strong class="card__price">2 899</strong>
+                        </div>
+
+                        <button class="mbtn mbtn--icon-text card__mbtn" data-modal="buyPro">
+                            Приобрести
+                            <svg class="svg mbtn__svg">
+                                <use xlink:href="./symbol/svg/sprite.symbol.svg#arrow_right" />
+                                <svg />
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- faq-block -->
+        <section id="faq" class="faq-block">
+            <div class="_container faq-block__container content--center">
+                <h2 class="text-block text-block__title--decor-left-right">Частые вопросы</h2>
+                <div class="faq-block__tabs">
+                    <div class="tab faq-block__tab">
+                        <button class="tab__btn-visibility tab__title">Какие у нас есть
+                            гарантии?<span></span></button>
+                        <div class="tab__body tab-body">
+                            <div class="tab-body__content">
+                                <p class="tab__body--text">Мы официальные диллеры данного чита. Нам доверяет огромное
+                                    количество
+                                    людей. Также, Вы
+                                    можете посмотреть представленные скриншоты читов выше.</p>
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <div class="tab faq-block__tab">
+                        <button class="tab__btn-visibility tab__title">Как устанавливаются читы?<span></span></button>
+                        <div class="tab__body  tab-body">
+                            <div class="tab-body__content">
+                                <p class="tab__body--text">Мы официальные диллеры данного чита. Нам доверяет огромное
+                                    количество
+                                    людей. Также, Вы
+                                    можете посмотреть представленные скриншоты читов выше.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab faq-block__tab">
+                        <button class="tab__btn-visibility tab__title">Что я получу после оплаты
+                            тарифа?<span></span></button>
+                        <div class="tab__body  tab-body">
+                            <div class="tab-body__content">
+                                <p class="tab__body--text">Мы официальные диллеры данного чита. Нам доверяет огромное
+                                    количество
+                                    людей. Также, Вы
+                                    можете посмотреть представленные скриншоты читов выше.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab faq-block__tab">
+                        <button class="tab__btn-visibility tab__title">Что такое DPI+, ASN, SKK?<span></span></button>
+                        <div class="tab__body  tab-body">
+                            <div class="tab-body__content">
+                                <p class="tab__body--text">Мы официальные диллеры данного чита. Нам доверяет огромное
+                                    количество
+                                    людей. Также, Вы
+                                    можете посмотреть представленные скриншоты читов выше.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab faq-block__tab">
+                        <button class="tab__btn-visibility tab__title">Влияют-ли читы на FPS в
+                            игре?<span></span></button>
+                        <div class="tab__body  tab-body">
+                            <div class="tab-body__content">
+                                <p class="tab__body--text">Мы официальные диллеры данного чита. Нам доверяет огромное
+                                    количество
+                                    людей. Также, Вы
+                                    можете посмотреть представленные скриншоты читов выше.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="faq-block__link link" data-modal="faq">У меня есть вопрос</button>
+            </div>
+        </section>
+
+        <!-- faq-block -->
+
+
+
+        <!-- footer -->
+        @@include('chunk/footer.html')
+
+    </div>
+
+
+</body>
+
+</html>

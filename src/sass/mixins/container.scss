@@ -1,0 +1,28 @@
+@mixin wrapper {
+    max-width: $wrapper-max;
+    min-width: $wrapper-min;
+    min-height: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+@mixin container-desktop {
+    max-width: $container-desktop-max;
+    padding-left: $container-desktop-padding;
+    padding-right: $container-desktop-padding;
+    margin: 0 auto;
+}
+
+@mixin container-laptop {
+    max-width: $container-laptop-max;
+    padding-left: $container-laptop-padding;
+    padding-right: $container-laptop-padding;
+    margin: 0 auto;
+}
+
+@mixin container-mobile {
+    max-width: $container-mobile-max;
+    padding-left: $container-mobile-padding;
+    padding-right: $container-mobile-padding;
+    margin: 0 auto;
+}

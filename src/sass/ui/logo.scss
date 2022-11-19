@@ -1,0 +1,33 @@
+.logo {
+    width: $logo-size;
+    height: $logo-size;
+    position: relative;
+    display: inline-block;
+
+    span {
+        display: block;
+        position: absolute;
+        width: 0;
+        height: 0;
+        border-bottom: calc($logo-size / 2.1) solid $logo-color1;
+        border-right: calc($logo-size / 2.1) solid transparent;
+
+        &:nth-child(1) {
+            transform: translateY(0%);
+            border-bottom-color: $logo-color1;
+        }
+
+        &:nth-child(2) {
+            transform: translateX(100%);
+            border-bottom-color: $logo-color2;
+        }
+
+        &:nth-child(3) {
+            transform: translate(100%, 100%);
+            border-bottom-color: $logo-color3;
+        }
+    }
+
+
+
+}

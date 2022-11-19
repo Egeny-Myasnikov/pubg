@@ -1,0 +1,38 @@
+$width: 200px;
+$height: 420px;
+$transition: .4s;
+
+.m-slider {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    &__wrap {
+        width: $width;
+        height: $height;
+        overflow: hidden;
+    }
+
+    &__slide {
+        width: calc(($width * 3) + 20px);
+        height: $height;
+        transition: $transition;
+        // transform: translateX(-100px);
+
+        img {
+            height: $height;
+            width: $width;
+        }
+    }
+
+    &__svg {
+        fill: $gray;
+        transition: $transition;
+    }
+
+    &__mbtn:hover &__svg {
+        fill: $link-color;
+        transition: $transition;
+    }
+}

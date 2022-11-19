@@ -1,0 +1,40 @@
+//colors
+$main-gradient: linear-gradient(120deg, #1a47ea, #05ffff);
+$card-gradient: linear-gradient(120deg, #05ffff, #0aa6fe);
+$second-gradient: linear-gradient(135deg, #ff9b05, #ff8e3f);
+$third-gradient: linear-gradient(#dda6ff, #d828f4);
+$fourth-gradient: linear-gradient(#ff9898, #ff1f00);
+$sub-color: #fb8500;
+$black-color: #2e3a59;
+$wite-color: #ffffff;
+$reviews-bg-color: #ffffff;
+$reviews-content-color: #2e3a59;
+$main-bg-color: #f5f9ff;
+$link-color: #0aa6fe;
+$link-hover-color: #83d2ff;
+
+$base-font-size: 16px;
+$laptop-font-size: 14px;
+$mobile-font-size: 10px;
+
+$logo-size: 40px;
+$logo-color1: #04ffff;
+$logo-color2: #ffffff;
+$logo-color3: #ff9b05;
+
+$gradient-first: linear-gradient(135deg, #ff9b05, #ff8e3f);
+$gradient-second: linear-gradient(120deg, #1a47ea, #05ffff);
+$white: #ffffff;
+$border: 1px solid #6cffff;
+$gray: #aaa;
+
+//container scss
+
+$wrapper-max: 100% !default;
+$wrapper-min: 280px !default;
+$container-desktop-max: 1440px;
+$container-laptop-max: 750px;
+$container-mobile-max: 375px;
+$container-desktop-padding: 200px;
+$container-laptop-padding: 70px;
+$container-mobile-padding: 20px;

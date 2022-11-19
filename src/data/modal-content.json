@@ -1,0 +1,45 @@
+{
+    "auth":
+    {   "name":"auth",
+        "title":"Авторизация", 
+        "content": ""
+    },
+    "buy":
+    {
+        "name":"buy",
+        "title":"Купить", 
+        "content":"",
+
+        "regular":
+                {   
+                    "name":"buy-regular",
+                    "title":"Купить обычный тариф"
+                },
+
+        "standard":
+                {   
+                    "name":"buy-standard",
+                    "title":"Купить стандартный тариф"
+                },
+
+        "pro":
+                {   
+                    "name":"buy-pro",
+                    "title":"Купить PRO тариф"
+                }
+    },
+    "faq":
+    {   "name":"faq",
+        "title":"Задайте свой вопрос"
+    },
+    
+    
+    
+    "video":
+    {
+        "name":"video",
+        "title":"Видео", 
+        "content":"<iframe width='560' height='315' src='https://www.youtube.com/embed/YNpmQ_KJ_JE' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay='true'; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe>"
+    }
+    
+}

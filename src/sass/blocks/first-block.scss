@@ -1,0 +1,133 @@
+.first-block {
+    background-image: url('./../img/inventar.png') no-repeat 40px bottom / 40%, url('./../img/car.png') no-repeat right bottom / 50%, url('./../img/bg-bottom-first-block.svg') no-repeat bottom / contain, $main-gradient;
+    // @media (min-width: 700px) {
+
+    // }
+
+    @media (max-width: 769px) {
+        background: url('./../img/inventar.png') no-repeat 40px bottom / 80%, url('./../img/bg-bottom-first-block.svg') no-repeat bottom / contain, $main-gradient;
+    }
+
+    @media (max-width: 426px) {
+        background: url('./../img/inventar.png') no-repeat 40px bottom / 150%, url('./../img/bg-bottom-first-block.svg') no-repeat bottom / contain, $main-gradient;
+    }
+
+    &__btns {
+        margin-bottom: 200px;
+
+        @media (max-width: 376px) {
+            width: 100%;
+
+        }
+    }
+
+    &__mbtn--buy {
+        background: $gradient-first;
+        color: $white;
+    }
+
+    &__mbtn--video {
+        border: $border;
+        color: $white;
+    }
+
+    &__text-block {
+        width: 70%;
+        margin: 50px 0;
+        color: $wite-color;
+
+        @media (max-width: 376px) {
+            width: 100%;
+
+        }
+    }
+
+    &__subtitle {
+        position: relative;
+        margin-top: 30px;
+
+        &::before {
+            content: '';
+            background-color: $gradient-first;
+            position: absolute;
+            left: 0;
+            top: -25px;
+            width: 100px;
+            height: 5px;
+
+            @media (max-width: 376px) {
+                left: 50%;
+                transform: translateX(-50%);
+
+            }
+        }
+    }
+}
+
+.text-block {
+    color: $black-color;
+
+    &__title {
+        margin-bottom: 20px;
+        position: relative;
+        display: inline-block;
+        text-transform: uppercase;
+
+
+        &::before,
+        &::after {
+            content: '';
+            position: absolute;
+            width: 40px;
+            height: 8px;
+            background: $gradient-first;
+            transform: rotate(-45deg);
+        }
+
+        &::before {
+            left: -20px;
+            top: 10px;
+        }
+
+        &::after {
+            left: -30px;
+            top: 0px;
+        }
+    }
+
+    &__title--decor-left-right {
+        margin-bottom: 20px;
+        position: relative;
+        display: inline-block;
+        text-transform: uppercase;
+
+        &::before,
+        &::after {
+            content: '';
+            position: absolute;
+            width: 40px;
+            height: 8px;
+            background: $gradient-first;
+            transform: rotate(-45deg);
+        }
+
+        &::before {
+            right: -30px;
+            bottom: 5px;
+        }
+
+        &::after {
+            left: -30px;
+            top: 0px;
+        }
+    }
+
+    &__subtitle {
+        margin-bottom: 60px;
+        line-height: 1.8;
+    }
+
+    &--center {
+        text-align: center;
+    }
+}

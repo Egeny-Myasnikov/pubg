@@ -1,0 +1,98 @@
+.card {
+    background-color: $wite-color;
+    display: grid;
+    justify-content: start;
+    border-radius: 5px 50px;
+
+    &__name {
+        padding: 18px;
+        color: $wite-color;
+        border-radius: 5px 50px 0px 50px;
+        background: $card-gradient;
+        text-transform: uppercase;
+    }
+
+    &:nth-child(1) &__name {
+        background: $card-gradient;
+    }
+
+    &:nth-child(2) &__name {
+        background: $third-gradient;
+    }
+
+    &:nth-child(3) &__name {
+        background: $fourth-gradient;
+    }
+
+    &__title {
+        margin: 21px 0 18px 0;
+        @include font-Montserrat-SemiBold;
+        font-size: 28px;
+    }
+
+    &__content {
+        padding: 0 30px;
+    }
+
+    &__list {
+        text-align: left;
+        @include font-Montserrat-Regular;
+        font-size: 16px;
+        line-height: 22px;
+
+
+    }
+
+    &__item {
+
+        &::before {
+            content: '';
+            display: inline-block;
+            width: 15px;
+        }
+
+        &:not(:last-child) {
+            margin-bottom: 15px;
+        }
+
+        &--check {
+            list-style-position: inside;
+
+            &::marker {
+                content: "✔";
+                color: #00d121;
+                font-size: 1.2em;
+            }
+        }
+
+        &--close {
+            list-style-position: inside;
+
+            &::marker {
+                content: "🗙";
+                color: #FF3D00;
+                font-size: 1.2em;
+
+            }
+        }
+    }
+
+    &__price {
+        display: inline-block;
+        @include font-Montserrat-SemiBold;
+        font-size: 28px;
+        margin: 21px 0 18px 0;
+
+        &::after {
+            content: '₽';
+            vertical-align: super;
+            margin-left: 15px;
+        }
+    }
+
+    &__mbtn {
+        border-radius: 0px 0px 5px 50px;
+        background: $gradient-first;
+        justify-content: center;
+    }
+}

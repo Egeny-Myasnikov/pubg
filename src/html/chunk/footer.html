@@ -1,0 +1,49 @@
+<footer class="footer">
+    <div class="_container footer__container">
+        <section id="contacts" class="footer__contacts contacts content--center">
+
+            <h2 class=" text-block text-block__title">Контакты</h2>
+
+            <div class="row row__flex contacts__row">
+                <div class="col col__flex col__flex--lb contacts__col">
+                    <img src="./../../img/box.png" alt="PUBG chits">
+                </div>
+                <div class="col contacts__col">
+                    <form class="form">
+                        <h3 class="form__title">Обратная связь</h3>
+                        <div class="form__info">
+                            <label class="form__label form__label--name" for="name"><input
+                                    class="form__field form__field--name" type="text" name="name" required
+                                    placeholder="Ваше имя *"></label>
+
+                            <label class="form__label form__label--email" for="email"><input
+                                    class="form__field form__field--email" type="email" name="email" required
+                                    placeholder="E-mail *"></label>
+                        </div>
+                        <label class="form__label form__label--message" for="message"><textarea
+                                class="form__field form__field--message" name="message"
+                                placeholder="Комментарий"></textarea></label>
+
+                        <button class="mbtn form__mbtn">Отправить</button>
+
+                    </form>
+                    <a class=" contacts__btn contacts__btn--telegram btn" href="#"> <svg class="svg svg-telegram">
+                            <use xlink:href="./symbol/svg/sprite.symbol.svg#telegram" />
+                            <svg /> </a>
+
+                    <a class=" contacts__btn contacts__btn--discord btn" href="#"> <svg class="svg svg-discord">
+                            <use xlink:href="./symbol/svg/sprite.symbol.svg#discord" />
+                            <svg /> </a>
+                </div>
+            </div>
+
+        </section>
+        <div class="row row__flex row__flex--sbc footer__row">
+            @@include('ui/logo.html')
+            @@include('ui/navigation/navigation.html')
+            @@include('ui/btn-auth.html')
+        </div>
+        <p class="copyright footer__copyright">Защищено <em>2022 -</em> <em id="date"></em> <strong>PUBG</strong> &copy;
+        </p>
+    </div>
+</footer>
